@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [jenkins.TestM_J]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="jenkins.TestM_J"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="jenkins.TestM_J">
+        <methods>
+          <include name="TestMaven"/>
+        </methods>
+      </class> <!-- jenkins.TestM_J -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [jenkins.TestM_J] -->
