@@ -14,6 +14,8 @@ public class TestM_J {
 	public void TestMaven() throws InterruptedException{
 		System.out.println("Welcome to Jenkins and Maven integration");
 		
+		System.setProperty("webdriver.gecko.driver", "C:\\work\\geckodriver.exe");
+		
 		WebDriver driver=new FirefoxDriver();
 		
 		driver.manage().window().maximize();
@@ -22,7 +24,7 @@ public class TestM_J {
 		
 		driver.get("https://www.google.co.in");
 		
-		driver.findElement(By.id("sb_ifc0")).sendKeys("ibm");
+		
 		
 		Thread.sleep(8000);
 		
