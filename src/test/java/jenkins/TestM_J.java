@@ -14,7 +14,7 @@ public class TestM_J {
 	public void TestMaven() throws InterruptedException{
 		System.out.println("Welcome to Jenkins and Maven integration");
 		
-		System.setProperty("webdriver.gecko.driver", "C:\\work\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/geckodriver.exe");
 		
 		WebDriver driver=new FirefoxDriver();
 		
