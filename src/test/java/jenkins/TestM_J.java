@@ -25,15 +25,15 @@ public class TestM_J {
 		WebDriver driver=new FirefoxDriver();*/
 		
 		
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
 		
-		WebDriver driver=new ChromeDriver();
+		//WebDriver driver=new ChromeDriver();
 		
-		//RemoteWebDriver driver = null; 
-		//DesiredCapabilities dc = DesiredCapabilities.firefox(); 
-		//driver = new RemoteWebDriver(new URL("http://10.151.158.81:5555/wd/hub"), dc);
+		RemoteWebDriver driver = null; 
+		DesiredCapabilities dc = DesiredCapabilities.chrome(); 
+		driver = new RemoteWebDriver(new URL("http://192.168.1.5:6666/wd/hub"), dc);
 
-		
+		 
 		driver.manage().window().maximize();
 		
 		System.out.println("Open URL");
