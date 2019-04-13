@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -24,9 +25,13 @@ public class TestM_J {
 		WebDriver driver=new FirefoxDriver();*/
 		
 		
-		RemoteWebDriver driver = null; 
-		DesiredCapabilities dc = DesiredCapabilities.firefox(); 
-		driver = new RemoteWebDriver(new URL("http://10.151.158.81:5555/wd/hub"), dc);
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
+		
+		WebDriver driver=new ChromeDriver();
+		
+		//RemoteWebDriver driver = null; 
+		//DesiredCapabilities dc = DesiredCapabilities.firefox(); 
+		//driver = new RemoteWebDriver(new URL("http://10.151.158.81:5555/wd/hub"), dc);
 
 		
 		driver.manage().window().maximize();
